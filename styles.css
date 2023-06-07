@@ -1,0 +1,125 @@
+body {
+    background-image: url('/images/chocolate-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+ 
+  * {
+    box-sizing: border-box;
+  }
+  /* The * means select all elements*/
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: white;
+    margin: 0;
+  }
+   
+  h1 {
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    font-size: 1.125rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  label {
+    display: block;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: .25rem;
+    
+  }
+  
+  input, button, select, textarea {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bold;
+  }
+  
+ 
+  .container {
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+    max-width: 720px;
+  }  
+  
+  .header {
+    font-weight: bold;
+    padding: 0 0.625rem;
+    margin-bottom: 1.875rem;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.63);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .description {
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.678);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  form {
+    background: #f87c0794;
+    padding: 2.5rem 0.625rem;
+    border-radius: 1rem;
+  }
+  
+  .form-group {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.15rem;
+  }
+  
+  .form-control {
+    display: block;
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.15rem 0.15rem;
+    color: black;
+    background-color: white;
+    background-clip: padding-box;
+    border: 1px solid white;
+    border-radius: 2px;
+    
+  }
+   
+  .input-radio,
+  .input-checkbox {
+    display: inline-block;
+    margin-right: .700rem;
+    min-height: 1rem;
+    min-width: 2rem;
+  }
+  
+  .input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+    border-radius: 5px;
+  }
+
+  
+  .submit-button {
+    display: block;
+    width: 60%;
+    padding: 0.75rem;
+    background: #d8db00;
+    border-radius: 2px;
+    margin: 1em auto;
+    border-color: black;
+  }
+  
+  
