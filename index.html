@@ -1,171 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!--   created by: Evans Pigon
+       date: 6/12/2023
+       class: CIS133DA
+       title: Building a Survey Form
+  -->
+
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/styles.css" />
-    <title>Chocolate Survey Form</title>
-
-    <div class="container">
-      <header class="header">
-        <h1 id="title" class="text-center">Chocolate Survey Form</h1>
-        <p id="description" class="description text-center">
-          Thank you for taking the time to help us improve the customer
-          experience
-        </p>
-      </header>
-      <form
-        id="survey-form"
-        action="https://survey-form.freecodecamp.rocks/?name=Jan&email=jan.mlinaric%40gmail.com&age=22&role=student&user-recommend=definitely&mostLike=challenges&prefer=back-end-projects&comment=a"
-      >
-        <div class="form-group">
-          <label id="name-label" for="name">Name</label>
-          <input
-            type="text"
-            class="form-control"
-            name="name"
-            id="name"
-            placeholder="Enter your name"
-            required
-          />
-          <label id="email-label" for="email">Email</label>
-          <input
-            type="email"
-            class="form-control"
-            name="email"
-            id="email"
-            placeholder="Enter your email"
-            required
-          />
-
-          <label id="number-label" for="number">Age (optional)</label>
-          <input
-            type="number"
-            class="form-control"
-            name="age"
-            id="number"
-            placeholder="Age"
-            min="10"
-            max="100"
-            required
-          />
-        </div>
-
-        <div class="form-group">
-          <p>Which option best describes your current occupation?</p>
-          <select id="dropdown" name="role" class="form-control" required>
-            <option value="">Select a current occupation</option>
-            <option value="1">Student</option>
-            <option value="2">Employed</option>
-            <option value="3">Retired</option>
-            <option value="4">Prefer not to say</option>
-            <option value="5">Other</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <p>Would you recommend us to a friend?</p>
-          <label>
+    <body>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="styles/styles.css" />
+      <title>Chocolate Survey Form</title>
+      <!--Survey form title and description-->
+      <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Chocolate Survey Form</h1>
+          <p id="description" class="description-text-center">
+            Thank you for taking the time to help us improve the customer
+            experience
+          </p>
+        </header>
+        <!--Personal info-->
+        <form
+          id="survey-form"
+          action="https://survey-form.freecodecamp.rocks/?name=Jan&email=jan.mlinaric%40gmail.com&age=22&role=student&user-recommend=definitely&mostLike=challenges&prefer=back-end-projects&comment=a"
+        >
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
             <input
-              type="radio"
-              name="user-recommend"
-              value="definitely"
-              class="input-radio"
-              checked
-            />Definitely</label
-          >
-          <label>
+              type="text"
+              class="form-control"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+            <label id="email-label" for="email">Email</label>
             <input
-              type="radio"
-              name="user-recommend"
-              value="maybe"
-              class="input-radio"
-            />Maybe</label
-          >
+              type="email"
+              class="form-control"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
 
-          <label
-            ><input
-              type="radio"
-              name="user-recommend"
-              value="no"
-              class="input-radio"
-            />No</label
-          >
-        </div>
-
-        <div class="form-group">
-          <p>What is your favorite payment option?</p>
-          <select id="dropdown" name="payment" class="form-control" required>
-            <option value="">Select a payment option</option>
-            <option value="1">Mobile payments</option>
-            <option value="2">Cash</option>
-            <option value="3">Debit cards / Credit cards</option>
-            <option value="4">Checks</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <p>What kind of chocolate do you prefer?(Check all that apply)</p>
-
-          <label
-            ><input
-              name="payment"
-              value="chocolate-dark"
-              type="checkbox"
-              class="input-checkbox"
-            />Dark Chocolate</label
-          >
-          <label>
+            <label id="number-label" for="number">Age (optional)</label>
             <input
-              name="payment"
-              value="chocolate-bittersweet"
-              type="checkbox"
-              class="input-checkbox"
-            />Bittersweet Chocolate</label
-          >
-          <label
-            ><input
-              name="payment"
-              value="chocolate-milk"
-              type="checkbox"
-              class="input-checkbox"
-            />Milk Chocolate</label
-          >
-          <label
-            ><input
-              name="payment"
-              value="chocolate-white"
-              type="checkbox"
-              class="input-checkbox"
-            />White Chocolate</label
-          >
-          <label
-            ><input
-              name="payment"
-              value="chocolate-liquor"
-              type="checkbox"
-              class="input-checkbox"
-            />Chocolate Liquor</label
-          >
-        </div>
+              type="number"
+              class="form-control"
+              name="age"
+              id="number"
+              placeholder="Age"
+              min="10"
+              max="100"
+              required
+            />
+          </div>
 
-        <div class="form-group">
-          <p>Any comments or suggestions?</p>
-          <textarea
-            id="comments"
-            class="input-textarea"
-            name="comment"
-            placeholder="Enter your comment here..."
-          ></textarea>
-        </div>
+          <!--Occupation question-->
+          <div class="form-group">
+            <p>Which option best describes your current occupation?</p>
+            <select
+              id="dropdown-occupation"
+              name="role"
+              class="form-control"
+              required
+            >
+              <option value="">Select a current occupation</option>
+              <option value="1">Student</option>
+              <option value="2">Employed</option>
+              <option value="3">Retired</option>
+              <option value="4">Prefer not to say</option>
+              <option value="5">Other</option>
+            </select>
+          </div>
+          <div class="divider"></div>
+          <!-- Recommendation input -->
+          <div class="form-group">
+            <p>Would you recommend us to a friend?</p>
+            <label>
+              <input
+                type="radio"
+                name="user-recommend"
+                value="definitely"
+                class="input-radio"
+                checked
+              />Definitely</label
+            >
+            <label>
+              <input
+                type="radio"
+                name="user-recommend"
+                value="maybe"
+                class="input-radio"
+              />Maybe</label
+            >
 
-        <div class="form-group">
-          <button type="submit" id="submit" class="submit-button">
-            Submit
-          </button>
-        </div>
-      </form>
-    </div>
+            <label
+              ><input
+                type="radio"
+                name="user-recommend"
+                value="no"
+                class="input-radio"
+              />No</label
+            >
+          </div>
+          <div class="divider"></div>
+          <!-- Payment options -->
+          <div class="form-group">
+            <p>What is your favorite payment option?</p>
+            <select
+              id="dropdown-payment"
+              name="payment"
+              class="form-control"
+              required
+            >
+              <option value="">Select a payment option</option>
+              <option value="1">Mobile payments</option>
+              <option value="2">Cash</option>
+              <option value="3">Debit cards / Credit cards</option>
+              <option value="4">Checks</option>
+            </select>
+          </div>
+          <div class="divider"></div>
+          <!-- Chocolate options -->
+          <div class="form-group">
+            <p>What kind of chocolate do you prefer?(Check all that apply)</p>
+
+            <label
+              ><input
+                name="dark"
+                value="chocolate-dark"
+                type="checkbox"
+                class="input-checkbox"
+              />Dark Chocolate</label
+            >
+            <label>
+              <input
+                name="bittersweet"
+                value="chocolate-bittersweet"
+                type="checkbox"
+                class="input-checkbox"
+              />Bittersweet Chocolate</label
+            >
+            <label
+              ><input
+                name="milk"
+                value="chocolate-milk"
+                type="checkbox"
+                class="input-checkbox"
+              />Milk Chocolate</label
+            >
+            <label
+              ><input
+                name="white"
+                value="chocolate-white"
+                type="checkbox"
+                class="input-checkbox"
+              />White Chocolate</label
+            >
+            <label
+              ><input
+                name="liquor"
+                value="chocolate-liquor"
+                type="checkbox"
+                class="input-checkbox"
+              />Chocolate Liquor</label
+            >
+          </div>
+          <div class="divider"></div>
+          <!-- Comment box -->
+          <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+          <!-- Submit button -->
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </body>
   </head>
 </html>
