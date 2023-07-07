@@ -1,0 +1,162 @@
+<!--   created by: Evans Pigon
+       date: 7//2023
+       class: CIS133DA
+       title: Build a Product Landing Page
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="product.css" />
+    <title>Product Landing Page</title>
+  </head>
+  <body>
+    <hr id="main-page" />
+    <header id="header">
+      <div class="logo">
+        <img
+          id="header-img"
+          src="product-images/carwash-logo.png"
+          alt="carwash logo"
+        />
+        <!-- img is from www.freepik.com /Font: Montserrat
+                Author: Julieta Ulanovsky,Sol Matas,Juan Pablo del Peral,Jacques Le Bailly Url: https://fonts.google.com/specimen/Montserrat -->
+      </div>
+
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="product.html">Home</a></li>
+          <li><a class="nav-link" href="#survey.html">Survey</a></li>
+          <li><a class="nav-link" href="tribute.html">Tribute</a></li>
+          <li><a class="nav-link" href="product.htm">Product</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="top-title">
+      <h2>Fast And Furious Car Wash</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input
+          name="email"
+          id="email"
+          type="email"
+          placeholder="Enter your email address"
+          required
+        />
+        <input id="submit" type="submit" value="GET STARTED" class="button" />
+      </form>
+    </section>
+
+    <div class="container">
+      <section id="benefits">
+        <!-- icons provided"http://www.freepik.com">Designed by macrovector_official / Freepik -->
+
+        <div class="center-text">
+          <div class="icon">
+            <img id="easy" src="product-images/easy.png" alt="easy-icon" />
+          </div>
+          <div class="benefits1" id="benefits1">
+            <h2>Affordable and easy</h2>
+            <p>
+              Option that fits every budget and easy to set-up at our location
+              or online. No contracts, so its even easier to cancel at any time.
+            </p>
+          </div>
+        </div>
+        <div class="center-text">
+          <div class="icon">
+            <img
+              id="unlimited"
+              src="product-images/unlimited.png"
+              alt="unlimited-icon"
+            />
+          </div>
+          <div class="benefits1">
+            <h2>Unlimited washes</h2>
+            <p>
+              You are able to wash and shine as often as you like! This inlclues
+              all of our locations as well. Eleminates the worry about weather
+              or rain checks.
+            </p>
+          </div>
+        </div>
+        <div class="center-text">
+          <div class="icon">
+            <img
+              id="faster"
+              src="product-images/faster.png"
+              alt="faster-icon"
+            />
+          </div>
+          <div class="benefits1">
+            <h2>Faster Lanes for members</h2>
+            <p>
+              Once a memeber you have access to our touch-free-reader and wash
+              your car without having to wait in line.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="video-show">
+        <iframe
+          id="video"
+          height="350"
+          src="https://www.youtube.com/embed/eWUxqVFBq74"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <section id="price">
+        <div class="product" id="gold">
+          <div class="level">Gold</div>
+          <h2>$20 /mo.</h2>
+          <ol>
+            <li>Members Benefits</li>
+            <li>Clear Coat</li>
+            <li>Double Foam</li>
+            <li>Wheel Cleaner</li>
+            <li>Presure Rinse</li>
+            <li>Air Freshner</li>
+          </ol>
+          <button class="button">Select</button>
+        </div>
+        <div class="product" id="plat">
+          <div class="level">Platinum</div>
+          <h2>$30 /mo.</h2>
+          <ol>
+            <li>Members Benefits</li>
+            <li>Hot Wax</li>
+            <li>Triple Foam</li>
+            <li>Wheel Cleaner</li>
+            <li>Tire Shine</li>
+            <li>Air Freshner</li>
+          </ol>
+          <button class="button">Select</button>
+        </div>
+        <div class="product" id="diamond">
+          <div class="level">Diamond</div>
+          <h2>$40 /mo.</h2>
+          <ol>
+            <li>Members Benefits</li>
+            <li>Ceramic Shield</li>
+            <li>Foam bath</li>
+            <li>Wheel Cleaner</li>
+            <li>Tire Shine</li>
+            <li>Car Wash Cleaning Kit</li>
+          </ol>
+          <button class="button">Select</button>
+        </div>
+      </section>
+      <footer>
+        <ul>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+        <span>Copyright 2023, Fast And Furious Car Wash</span>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,369 @@
+/* created by: Evans Pigon
+       date: 7//2023
+       class: CIS133DA
+       title: Building a Product Page
+*/
+
+
+*, ::before, ::after  
+    { 
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;;
+    }
+  
+body 
+    {
+        background-color: #6cd0dc;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+  
+#main-page 
+    {
+        position: relative;
+    }
+
+#header
+    {
+        position: fixed;
+        left: 0;
+        width: 100%;
+        top: 0;
+        min-height: 75px;
+        padding: 0px 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #3c4abf;
+    }
+
+.logo 
+    {
+        width: 60vw;
+    }
+
+.logo img 
+    {
+        width: 100%;
+        height: 100%;
+        max-width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 20px;
+        
+    }
+
+#nav-bar
+    {
+        font-weight: 400;
+    }
+
+nav ul 
+    {
+        width: 35vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+#nav-bar li 
+    {
+        list-style: none;
+        float:right;
+    }
+  
+a 
+    {
+        display: block;
+        color: #fafafa;
+        text-align: center;
+        padding: 30px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px #3ec3f8c7;
+    }
+
+#nav-bar li a:hover
+    {
+        background-color: #6cd0dc;
+        color: #141414;
+    }
+
+        /* after nav bar */
+  
+.button 
+    {
+        padding: 0;
+        height: 45px;
+        font-size: 1.1em;
+        font-weight: bold;
+        border: 1px #141414 solid;
+        border-radius: 2px;
+        background: transparent;
+        cursor: pointer;
+    }
+  
+#top-title 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 200px;
+        margin-top: 50px;
+    }
+  
+#top-title h2 
+    {
+        margin-bottom: 15px;
+    }
+  
+#top-title input[type='email'] 
+    {
+        max-width: 275px;
+        width: 100%;
+        padding: 5px;
+    }
+  
+#top-title input[type='submit'] 
+    {
+        max-width: 150px;
+        width: 100%;
+        height: 30px;
+        margin: 15px 0;
+        border: 1px;
+        border-color: #141414;
+        background-color: #2fcf29;
+    }
+  
+#top-title input[type='submit']:hover 
+    {
+        background-color: #0bfc03;
+    } 
+
+.container 
+    {
+        max-width: 1000px;
+        width: 100%;
+        margin: 100px auto;
+    }
+
+.center-text 
+    {
+        display: flex;
+    }
+  
+#benefits 
+    {
+        margin-top: 30px;
+    }
+  
+#benefits .icon 
+    {
+        display: flex;
+        height: 100px;
+        width: 20vw;
+        margin-left: 150px;
+    }
+
+#benefits .benefits1 
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 125px;
+        width: 80vw;
+        padding: 5px;
+    }
+  
+#video-show 
+    {
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+    }
+  
+#video-show iframe 
+    {
+        max-width: 560px;
+        width: 100%;
+    }
+  
+#price 
+    {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+  
+.product 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 40%;
+        margin: 10px;
+        border: 1px solid #141414;
+        border-radius: 3px;
+    }
+  
+.product .level 
+    {
+        color: #141414;
+        background-color: #fffb00;
+        padding: 15px 0;
+        width: 100%;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+  
+.product h2 
+    {
+        margin-top: 10px;
+    }
+  
+.product ol 
+    {
+        margin: 15px 0;
+    }
+  
+.product ol li 
+    {
+        text-align: left;
+        padding: 5px 0;
+    }
+  
+.product button 
+    {
+        border: 0;
+        margin: 15px 5px;
+        padding: 0;
+        background-color: #2fcf29;
+        font-weight: 400;
+        border: 1px #141414 solid;
+        max-width: 150px;
+        width: 40%;
+        height: 30px;
+    }
+ 
+.product button:hover 
+    {
+        background-color: #0bfc03;
+    }
+  
+footer 
+    {
+        margin: 50px;
+        background-color: #0642734b;
+        padding: 0;
+        max-width: 100%;
+    }
+  
+footer ul 
+    {
+        display: flex;
+        justify-content: flex-end;
+    }
+  
+footer ul li 
+    {
+        padding: 0;
+        list-style-type: none;
+    }
+  
+footer span 
+    {
+        margin-top: 5px;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 0.9em;
+    }
+
+  @media (max-width: 600px) {
+    header {
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .logo {
+      margin-top: 15px;
+      width: 100%;
+      position: relative;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .logo > img {
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 650px) {
+    nav {
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 50px;
+    }
+    nav li {
+      padding-bottom: 5px;
+    }
+  }
+
+  @media (max-width: 650px) {
+    nav > ul {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 650px) {
+    #top-title {
+      margin-top: 120px;
+    }
+  }
+
+  @media (max-width: 550px) {
+    #benefits .icon {
+      display: none;
+    }
+  }
+
+  @media (max-width: 550px) {
+    #benefits .benefits1 {
+      width: 100%;
+      text-align: center;
+      padding: 0;
+      height: 150px;
+    }
+  }
+  
+  @media (max-width: 650px) {
+    #benefits {
+      margin-top: 0;
+    }
+  }
+  
+  
+
+  @media (max-width: 800px) {
+    #pricing {
+      flex-direction: column;
+    }
+    .product {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
+  
