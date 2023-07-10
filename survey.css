@@ -4,93 +4,101 @@ class: CIS133DA
 title: Building a Survey Form
 */
 
-* /* The * means select all elements */
+:root 
     {
-      box-sizing: border-box;
+        --main-white: #FFFFFF;
+        --main-lt-blue: #87ceeb;
+        --main-blue: #4a5e78;
+        --main-black: #1A1A1A;
+        --main-bt-blue:#40e0d0;
+    }
+
+*, *::before, *::after 
+    {
+        box-sizing: inherit;
+        margin: 0;
+        padding: 0;
+    }
+
+html   
+    {
+        box-sizing: border-box;
+        font-size: 62.5%;
+        scroll-behavior: smooth;
     }
 
 body  
     {
-      background-image: url('/survey-images/chocolate-2.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
+        background-image: url('/survey-images/chocolate-2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: auto;
+        max-width: 720px;
+        font-size: 1.8rem; 
+        font-weight: 400;
+        line-height: 1.4;
+        padding: 0;
+        color: var(--main-black);
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
     }
 
-    .topnav 
-  {
-    background-color: rgb(70, 69, 69);
-    display: block;
-    list-style-type: none;
-    margin: 0;
-    padding: 2px;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%
-  }
-
-  .topnav li 
+.nav 
     {
-      background-color: rgba(5, 5, 5, 0.637);
-      font-size: 1.5rem;
-      float:left;
-      display: inline;
-      border-right: 3px solid rgb(70, 69, 69);
-    }
-    .topnav li:last-child 
-    {
-      border-right: none;
-      
+        display: flex;
+        justify-content: flex-end;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: var(--main-lt-blue);
+        box-shadow: 0 2px 0 rgba(255, 255, 255, 0.466);
+        z-index: 10;
     }
 
-.topnav li a
+.nav-list
     {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
+      display: flex;
+       margin-right: 2rem;
+       list-style: none;
+    }
+    
+
+.nav-list a
+    {
+        display: block;
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: 550;
+        padding: 2.2rem;
+        color: var(--main-black);
     } 
 
-.topnav li a:hover
+.nav-list a:hover
     {
-      background-color: #fffefe;
-      color: black;
+        background: var(--main-black);
+        color: var(--main-white)
     }
 
-
-.container /* the whole page*/ 
+#title /*top title*/ 
     {
-      margin: auto;
-      max-width: 720px;
-      font-weight: bold;
-      padding: 0;
-    } 
-
- .header /* title and description */ 
-    {
-      font-size: 2rem;
-      padding-bottom: 0;
-      color: white; 
-      text-align: center;
-    }
-   
-  h1 /*title*/ 
-    {
-      margin-top: 70px;
+      margin-top: 75px;
       font-family: Impact, 'Arial Narrow Bold', sans-serif ;
-      font-weight: 400;
-      text-shadow:  5px 5px 5px black; 
+      font-size: 6rem;
+      text-align: center;
+      font-weight: 500;
+      color: var(--main-white);
+      text-shadow:  5px 5px 5px rgba(0, 0, 0, 0.589); 
     }
   
   #description  
     {
       font-style: italic;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
+      text-align: center;
       font-weight: bold;
-      text-shadow: 6px 6px 6px black;
+      color: var(--main-white);
+      text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.589);
     }
 
   #survey-form /* Info-box background*/ 
@@ -121,15 +129,15 @@ body
 
   .form-group /* name,email,age */  
     {
-      font-size: 1.1rem;
+      font-size: 1.3rem;
       padding: 0;
+      font-weight: bold;
     }
   
   label, p /* text on the radio and checkbox  */ 
     {
       display: block;
       align-items: center;
-      font-size: 1.1rem;
       padding: 5px 5px;
       margin-left: 10px;
       margin-bottom: .25rem;
@@ -173,6 +181,34 @@ body
       border-radius: 2px;
       margin: 2em auto;
       border-color: black;
+    }
+
+    @media (max-width: 75em) {
+      html {
+        font-size: 60%;
+      }
+    }
+    
+    @media (max-width: 61.25em) {
+      html {
+        font-size: 58%;
+      }
+    }
+     
+    @media (max-width: 28.75em) {
+      html {
+        font-size: 55%;
+      }
+    }
+
+    @media (max-width: 28.75em) {
+      .nav {
+        justify-content: center;
+      }
+    
+      .nav-list {
+        margin: 0 1rem;
+      }
     }
   
   
