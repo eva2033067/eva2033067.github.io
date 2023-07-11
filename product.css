@@ -9,7 +9,7 @@
         --main-lt-blue: #87ceeb;
         --main-blue: #4a5e78;
         --main-black: #1A1A1A;
-        --main-bt-blue:#40e0d0;
+        --main-bt-blue:#92e9e0;
         --main-bkgrnd: #bbbbbb ;
     }
 
@@ -30,7 +30,7 @@ html
   
 body 
     {
-        background-color: var(--main-white);
+        background-color: var(--main-bt-blue);
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         color: var(--main-black);
         margin: auto;
